@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Creating a Navigation Bar</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li style="float:right"><a href="#login">
+                <img src="login-user.png" alt="Login Icon" class="login-user" />Log In
+            </a></li>
+    </ul>
+
+    <div id="home">
+        This is home
+    </div>
+
+    <div id="news">
+        This is the news
+    </div>
+
+    <br />
+
+    <h2>Login Page</h2>
+    <form action="#">
+        <label for="userName">Email
+            <input type="text" name="email" value="Enter your email" id="email" required />
+        </label>
+
+        <br>
+        <label for="password">Password
+            <input type="password" name="password" id="password" />
+        </label>
+
+        <br>
+        <input type="submit" name="login" value="Login" id="login" />
+    </form>
+    <br />
+    <br />
+
+
+    <h2> Register Page</h2>
+    <form action="#">
+        <label for="firstName">First Name
+            <input type="text" name="firstName" value="Enter your First Name" id="firstName" required />
+        </label>
+
+        <br>
+        <label for="lastName">Last Name
+            <input type="text" name="lastName" value="Enter your Last Name" id="lastName" />
+        </label>
+
+        <br>
+        <label for="userName">Email
+            <input type="text" name="email" value="Enter your Email" id="email" required />
+        </label>
+
+        <br>
+        <label for="password">Password
+            <input type="password" name="password" id="password" />
+        </label>
+
+        <br>
+        <label for="password">Confirm Password
+            <input type="password" name="password" id="password" />
+        </label>
+
+        <br>
+        <fieldset>
+            <legend>Gender</legend>
+            <label for="radio"> Female
+                <input type="radio" name="radio" id="radio1" />
+            </label>
+            <label for="radio"> Male
+                <input type="radio" name="radio" id="radio2" />
+            </label>
+
+        </fieldset>
+
+        <br>
+        <label for="birthday">Date of Birth
+            <input type="date" name="birthday" value="mm/dd/yyy" id="birthday" />
+        </label>
+<br />
+<br>
+        <fieldset>
+            <legend>Habits</legend>
+            <label for="checkbox">You like sports
+                <input type="checkbox" name="checkbox" id="checkbox" />
+            </label>
+            <label for="checkbox2">You like to eat
+                <input type="checkbox" name="checkbox2" id="checkbox2" />
+            </label>
+            <label for="checkbox3">You like to sleep
+                <input type="checkbox" name="checkbox3" id="checkbox3" />
+            </label>
+        </fieldset>
+
+        <br>
+        <input type="submit" name="register" value="Register" id="register" />
+
+
+
+    </form>
+
+    <br />
+    <br />
+
+    <div id="contact">
+        This is for contact information
+    </div>
+
+    <div id="resources">
+        This is for resources
+    </div>
+
+</body>
+
+</html>

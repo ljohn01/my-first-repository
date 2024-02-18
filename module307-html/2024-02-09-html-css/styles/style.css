@@ -1,0 +1,27 @@
+body {
+        background-color: blanchedalmond;
+        color: black;
+        font-size: 1.1em;
+    }
+    h1 {
+        color: rgb(0, 51, 152);
+        margin: 40px;
+    }
+
+    #intro {
+        font-size: 1.3em;
+    }
+    .colorful {
+        color: rgb(255, 61, 190);
+    }
+    
+    section { 
+        border: 5px solid rgb(234, 51, 51); 
+        padding: 10px; 
+        background-color: rgb(218, 179, 180); 
+    }
+
+    section p {
+        color: rgb(93, 15, 63);
+    }
+    
