@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register for Bookworm Lounge</title>
     <link rel="stylesheet" href="./styles/style.css">
+
+
+    <style>
+        body {
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+
 </head>
+
 <body>
     <nav>
         <ul>
@@ -17,24 +28,75 @@
             <li><a href="#library">Digital Library</a></li>
             <li style="float:right"><a href="login.html">Log In</a></li>
             <li style="float:right"><a class="active" href="register.html">Register</a></li>
-            </a></li>
+
+            
         </ul>
     </nav>
 
-    <div class="logo">
-        <h1>Bookworm Lounge</h1>
+    <h2>Register Page</h2>
+    <div class="form-content">
+        <div class="form-long">
+            <img id="border" style="width: 300px; height: 250px;"
+                src="https://images.unsplash.com/photo-1523689094115-65c863cf262d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Bookworm Logo">
+            <br><br><br>
+            <form action="#">
+                <label for="firstName">First Name
+                    <input type="text" name="firstName" placeholder="Enter your First Name" id="firstName" required />
+                </label> <br> <br>
+
+                <label for="lastName">Last Name
+                    <input type="text" name="lastName" placeholder="Enter your Last Name" id="lastName" />
+                </label> <br> <br>
+
+
+                <label for="userName">Email
+                    <input type="text" name="email" placeholder="Enter your Email" id="email" required />
+                </label>
+
+                <br><br>
+                <label for="password">Password
+                    <input type="password" placeholder="Create a password" name="password" id="password" />
+                </label> <br> <br>
+
+
+                <label for="password">Confirm Password
+                    <input type="password" placeholder="Confirm your password" name="password" id="password" />
+                </label> <br>
+
+                <br>
+                <label for="birthday">Date of Birth
+                    <input type="date" name="birthday" value="mm/dd/yyy" id="birthday" />
+                    <br><br>
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <label for="radio"> Female
+                            <input type="radio" name="radio" id="radio1" />
+                        </label>
+                        <label for="radio"> Male
+                            <input type="radio" name="radio" id="radio2" />
+                        </label>
+                        <label for="radio"> Other
+                            <input type="radio" name="radio" id="radio3" />
+                        </label>
+                    </fieldset>
+                </label> <br>
+
+                <label for="dog-names">Pronouns:</label>
+                <select name="pronouns" id="prounouns">
+                    <option value="select">Select</option>
+                    <option value="she">She/Hers</option>
+                    <option value="he">He/His</option>
+                    <option value="they">They/Them</option>
+                    <option value="other">Other</option>
+                </select> <br> <br>
+
+                <input type="submit" name="register" value="Register" id="register" />
+                <p style="font-style: italic; color: palevioletred;"><a href="login.html">Have an account already? Login
+                        here!</a></p>
+        </div>
     </div>
 
-
-    <div class="row">
-        <div class="container">
-            <!--     flex items-->
-            <!-- <div class="left-container"> -->
-            <div class="boxes" id="box1">&#128151;</div>
-            <div class="boxes" id="box2">A Reason To</div>
-            <div class="boxes" id="box3">Turn The Page</div>
-            <div class="boxes" id="box4">&#128151;</div>
-        </div> <br>
-
 </body>
+
 </html>
