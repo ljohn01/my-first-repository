@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login to Bookworm Lounge</title>
     <link rel="stylesheet" href="./styles/style.css">
+  
+
+    <style>
+        body {
+        box-sizing: border-box;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    </style>
+    
 </head>
+
 <body>
     <nav>
         <ul>
@@ -15,26 +26,32 @@
             <li><a href="#events">Virtual Book Events</a></li>
             <li><a href="#recs">Book Recommendations</a></li>
             <li><a href="#library">Digital Library</a></li>
-            <li style="float:right"><a class="active "login.html">Log In</a></li>
+            <li style="float:right"><a class="active" href="login.html">Log In</a></li>
             <li style="float:right"><a href="register.html">Register</a></li>
-            </a></li>
+         
         </ul>
     </nav>
 
-    <div class="logo">
-        <h1>Bookworm Lounge</h1>
+
+    <h2>Login Page</h2>
+    <div class="form-content">
+        <div class="form">
+            <img id="border" style="width: 300px; height: 250px;" src="https://images.unsplash.com/photo-1523689094115-65c863cf262d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bookworm Logo">
+            <br><br><br> 
+            <form action="#">
+                <label for="userName">Email
+                    <input type="text" name="email" placeholder="Enter email" id="email" required />
+                </label> <br> <br>
+
+
+                <label for="password">Password
+                    <input type="password" name="password" id="password" placeholder="Enter password" />
+                </label>
+                <br> <br>
+                <input type="submit" name="login" value="Login" id="login" />
+                <p style="font-style: italic; color: palevioletred;"><a href="register.html">Dont't have an account with us? Register here!</a></p>
+        </div>
     </div>
-
-
-    <div class="row">
-        <div class="container">
-            <!--     flex items-->
-            <!-- <div class="left-container"> -->
-            <div class="boxes" id="box1">&#128151;</div>
-            <div class="boxes" id="box2">A Reason To</div>
-            <div class="boxes" id="box3">Turn The Page</div>
-            <div class="boxes" id="box4">&#128151;</div>
-        </div> <br>
-
 </body>
+
 </html>
